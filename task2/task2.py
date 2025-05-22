@@ -27,10 +27,7 @@ def calculate_distance(x0, y0, x, y):
     return math.sqrt((x - x0) ** 2 + (y - y0) ** 2)
 
 
-def calculate_dots_position():
-    circle_path = sys.argv[1]
-    dots_path = sys.argv[2]
-
+def calculate_dots_position(circle_path, dots_path):
     center_x, center_y, radius = read_circle(circle_path)
     dots = read_dots(dots_path)
 
@@ -44,4 +41,4 @@ def calculate_dots_position():
             print(2)
 
 
-calculate_dots_position()
+calculate_dots_position(sys.argv[1], sys.argv[2])
