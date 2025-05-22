@@ -28,10 +28,7 @@ def fill_with_value(test_data, values_map):
 
 
 def make_report(values_path, tests_path, report_path):
-    print(f"values_path {values_path} \n tests_path {tests_path} \n report_path {report_path}")
     values_map = read_values(values_path)
-    print(values_map)
-
     with open(tests_path, 'r') as f:
         tests_data = json.load(f)
 
