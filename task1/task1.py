@@ -20,7 +20,6 @@ def main(n, m):
 
             part_of_path = []
 
-        next_element = circular_array[next_index]
         i += 1
 
     print("".join(str(x) for x in full_path))
